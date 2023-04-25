@@ -11,6 +11,8 @@ console.log(port);
 
 // middleware
 app.use(express.json())
+
+app.get('/',(req,res)=>res.send("Flight Booking "))
 // routers
 app.use("/users", userRouter)
 app.use(auth)
